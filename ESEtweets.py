@@ -56,6 +56,9 @@ oauth = OAuth1Session(
 )
 
 while True:
+    
+    # Spare the CPU
+    time.sleep(1)
 
     if not os.path.isfile(fname) :
         continue
